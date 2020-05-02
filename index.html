@@ -4,30 +4,109 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
 
     <title>Sean Heffernan | Student | seandheffernan@gmail.com</title>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
   </head>
 
   <body>
-	<ul>
-		<li id="slide1">
-			<h2>Personal</h2>
-		</li>
-		<li id="slide2">
-			<h2>Education</h2>
-		</li>
-		<li id="slide3">
-			<h2>Skills</h2>
-		</li>
-		<li id="slide4">
-			<h2>Projects</h2>
-		</li>
-	</ul>
+
+  	    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Sean Heffernan</h3>
+                <strong>SH</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Personal</a>
+                        </li>
+                        <li>
+                            <a href="#">Education</a>
+                        </li>
+                        <li>
+                            <a href="#">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#">Projects</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        Resume
+                    </a>
+                </li>
+                <li>
+                    <a href="#contactSub" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                    <ul class="collapse list-unstyled" id="contactSub">
+                    	<li>
+                            <a href="#">Phone Number</a>
+                        </li>
+                    	<li>
+                            <a href="#">Email</a>
+                        </li>
+                        <li>
+                        	<i class="fab fa-linkedin"></i>
+                            <a href="#">LinkedIn</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+            </button>
+          	<button onclick="toggleDarkMode()">Toggle</button>
+			<ul>
+				<li id="slide1">
+					<h2>Personal</h2>
+				</li>
+				<li id="slide2">
+					<h2>Education</h2>
+				</li>
+				<li id="slide3">
+					<h2>Skills</h2>
+				</li>
+				<li id="slide4">
+					<h2>Projects</h2>
+				</li>
+			</ul>
+    </div>
+
+
+
 
 
 
@@ -36,6 +115,6 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src = ".js"></script>
+    <script src = "index.js"></script>
   </body>
 </html>
