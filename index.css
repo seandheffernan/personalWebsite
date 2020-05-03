@@ -116,6 +116,10 @@ span {
     font-size: 1.8em;
 }
 
+#sidebar.active ul li ul li span {
+	display: none;
+}
+
 #sidebar ul.components {
     padding: 20px 0;
     border-bottom: 1px solid #47748b;
