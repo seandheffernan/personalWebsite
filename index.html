@@ -1,41 +1,149 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
 
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+
     <title>Sean Heffernan | Student | seandheffernan@gmail.com</title>
-  </head>
 
-  <body>
-	<ul>
-		<li id="slide1">
-			<h2>Personal</h2>
-		</li>
-		<li id="slide2">
-			<h2>Education</h2>
-		</li>
-		<li id="slide3">
-			<h2>Skills</h2>
-		</li>
-		<li id="slide4">
-			<h2>Projects</h2>
-		</li>
-	</ul>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
 
+<body>
 
+    <div class="wrapper">
+    	<!-- Sidebar  -->
+	    <nav id="sidebar" class="fixed-top">
+	        <div class="sidebar-header">
+	            <h3>Sean Heffernan</h3>
+	            <strong>SH</strong>
+	        </div>
+
+	        <ul class="list-unstyled components">
+	            <li class="active">
+	                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+	                    <i class="fas fa-home"></i>
+	                    Home
+	                </a>
+	                <ul class="collapse list-unstyled" id="homeSubmenu">
+	                    <li>
+	                        <a href="#">Personal</a>
+	                    </li>
+	                    <li>
+	                        <a href="#">Education</a>
+	                    </li>
+	                    <li>
+	                        <a href="#">Skills</a>
+	                    </li>
+	                    <li>
+	                        <a href="#">Projects</a>
+	                    </li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#">
+	                    <i class="fas fa-briefcase"></i>
+	                    Resume
+	                </a>
+	            </li>
+	            <li>
+	                <a href="#contactSub" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+	                    <i class="fas fa-paper-plane"></i>
+	                    Contact
+	                </a>
+	                <ul class="collapse list-unstyled" id="contactSub">
+	                	<li>
+	                        <a href="#" data-toggle="modal" data-target="#contactModal"><i class="fas fa-address-card fa-lg"></i><span>&ensp;Personal</span></a>
+	                    </li>
+	                	<li>
+	                        <a href="mailto:seandheffernan@gmail.com"><i class="fas fa-envelope-square fa-lg"></i><span>&ensp;Email</span></a>
+	                    </li>
+	                    <li>
+	                        <a href="https://www.linkedin.com/in/seandheffernan/" target="_blank"><i class="fab fa-linkedin fa-lg"></i><span>LinkedIn</span></a>
+	                    </li>
+	                </ul>
+	            </li>
+	        </ul>
+
+	        <ul class="list-unstyled CTAs">
+	            <li>
+	                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+	            </li>
+	        </ul>
+	    </nav>
+
+	    <!-- Page Content  -->
+	    <div id="content">
+
+	        <button type="button" id="sidebarCollapse" class="btn btn-info">
+	            <i class="fas fa-align-left"></i>
+	        </button>
+	      	<button onclick="toggleDarkMode()">Toggle</button>
+			<ul>
+				<li id="slide1">
+					<img class = "image" src="linkedinPhoto.jpg" alt="https://external-preview.redd.it/meHGx4tMG4Ru4nnj0cpsJHbJmRwXbuhzJffmcJE604Q.jpg?auto=webp&s=26c2ae0d5900d5747c27c3a15da7bb53022ffb8c">
+				</li>
+				<li id="slide2">
+					<h2>Personal</h2>
+				</li>
+				<li id="slide3">
+					<h2>Education</h2>
+				</li>
+				<li id="slide4">
+					<h2>Skills</h2>
+				</li>
+				<li id="slide5">
+					<h2>Projects</h2>
+				</li>
+			</ul>
+			<!-- Modal -->
+			<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  	<div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      	<div class="modal-header">
+				        	<h5 class="modal-title" id="contactLabel">Contact Info</h5>
+				        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          		<span aria-hidden="true">&times;</span>
+				        	</button>
+				      	</div>
+				      	<div class="modal-body">
+			        		<address class="vcard">
+								<span class = "adr">
+									<strong>Phone</strong><br>
+									<a class = "tel" href="tel:+16504374124">(650)-437-4124</a><br>
+									<strong>Email</strong><br>
+									<a class = "email" href ="mailto:seandheffernan@gmail.com">seandheffernan@gmail.com</a><br>
+									<strong>Address</strong><br>
+									<span class ="street-address">516 Yale Drive</span><br> 
+									<span class = "locality">San Mateo</span>
+									<span class = "region">CA</span>,
+									<span class = "postal-code">94402</span>
+								</span>
+							</address>
+				      	</div>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+	</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src = ".js"></script>
-  </body>
+    <script src = "index.js"></script>
+</body>
 </html>
