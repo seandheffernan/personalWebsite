@@ -50,7 +50,7 @@ span {
 
 .wrapper {
     display: flex;
-    align-items: stretch;
+    width: 100%;
 }
 
 #sidebar {
@@ -59,6 +59,7 @@ span {
     background: #7386D5;
     color: #fff;
     transition: all 0.3s;
+    position: relative;
 }
 
 #sidebar.active {
@@ -249,4 +250,11 @@ a.article:hover {
     #sidebarCollapse span {
         display: none;
     }
+}
+img {
+	border-radius:50%;
+}
+
+#slide1 {
+	height: 600px;
 }
