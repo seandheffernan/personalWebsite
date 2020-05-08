@@ -7,3 +7,10 @@ function toggleDarkMode() {
 $('#sidebarCollapse').on('click', function () {
     $('#sidebar').toggleClass('active');
 });
+
+$('body').on('show.bs.modal', function () {
+	$('#sidebar').addClass("fixModal"); 
+}); 
+$('body').on('hidden.bs.modal', function () { 
+	$('#sidebar').removeClass("fixModal"); 
+});
