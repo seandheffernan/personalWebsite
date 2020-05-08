@@ -4,6 +4,7 @@
 body {
 	background-image: url("https://wallpapercave.com/wp/fto5lYX.jpg");
 	font-family: 'Cormorant Garamond', serif;
+    overflow-x: hidden;
 }
 
 .dark-body {
@@ -257,6 +258,9 @@ img {
 #slide1 {
     background-image: url("tokyo.jpg")
 }
+#slide3 {
+    /*background-image: url("RPIQuad.jpg");*/
+}
 #introWords {
     float: left;
 }
@@ -282,7 +286,7 @@ img {
         margin-left: 60px;
     }
     #slide1 {
-        /*color: #a9a9a9;*/
+        color: #041738;
         padding-top: 200px;
         height: 100vh;
         background-attachment: fixed;
@@ -318,6 +322,16 @@ img {
     #pitch {
         padding-left: 620px;
         animation: fadeInRight 2s;
+    }
+    #slide2 {
+        height: 1000px;
+        /*text-align: center;*/
+    }
+    .slideHeader {
+        text-align: center;
+        font-size: 40px;
+        margin-top: 40px;
+        text-decoration: underline;
     }
 }
 
