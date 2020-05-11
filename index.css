@@ -244,6 +244,7 @@ a.article:hover {
     position: fixed;
     margin-top: 10px;
     margin-left: 10px;
+    z-index: 9999;
 }
 img {
     border-radius:50%;
@@ -257,7 +258,7 @@ img {
     padding-left: 0px;
 }
 #slide1 {
-    background-image: url("tokyo.jpg")
+    background-image: url("public/backgrounds/tokyo.jpg")
 }
 #slide3 {
     /*background-image: url("RPIQuad.jpg");*/
@@ -280,6 +281,10 @@ img {
 }
 #profile a {
     text-decoration: underline;
+}
+#profile {
+    font-size: 25px;
+    color: #808080;
 }
 
 /* ---------------------------------------------------
@@ -332,8 +337,8 @@ img {
     }
     #slide2 {
         margin: auto;
-        height: 1000px;
-        padding-top: 40px;
+        height: 750px;
+        padding-top: 80px;
         text-align: center;
         color: #20B2AA;
     }
@@ -345,7 +350,7 @@ img {
         margin: auto;
         height: 1000px;
         text-align: center;
-        padding-top: 40px;
+        padding-top: 20px;
     }
     #education {
         display: inline-block;
@@ -355,7 +360,7 @@ img {
         height: 1000px;
         margin: auto;
         text-align: center;
-        padding-top: 40px;
+        padding-top: 20px;
         color: #20B2AA;
     }
     .slideHeader {
@@ -368,7 +373,7 @@ img {
         columns: 2;
         -webkit-columns: 2;
         -moz-columns: 2;
-        font-size: 20px;
+        font-size: 18px;
     }
     #slide4 li {
         color: black;
