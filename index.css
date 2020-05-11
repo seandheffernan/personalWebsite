@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 body {
-	background-image: url("https://wallpapercave.com/wp/fto5lYX.jpg");
+	/*background-image: url("https://wallpapercave.com/wp/fto5lYX.jpg");*/
 	font-family: 'Cormorant Garamond', serif;
+    overflow-x: hidden;
+    background-color: white;
 }
 
 .dark-body {
@@ -242,6 +244,7 @@ a.article:hover {
     position: fixed;
     margin-top: 10px;
     margin-left: 10px;
+    z-index: 9999;
 }
 img {
     border-radius:50%;
@@ -255,7 +258,10 @@ img {
     padding-left: 0px;
 }
 #slide1 {
-    background-image: url("tokyo.jpg")
+    background-image: url("public/backgrounds/tokyo.jpg")
+}
+#slide3 {
+    /*background-image: url("RPIQuad.jpg");*/
 }
 #introWords {
     float: left;
@@ -270,6 +276,16 @@ img {
 #topic {
     font-family: 'Noto Serif', serif;
 }
+.modal-body a {
+    text-decoration: underline;
+}
+#profile a {
+    text-decoration: underline;
+}
+#profile {
+    font-size: 25px;
+    color: #808080;
+}
 
 /* ---------------------------------------------------
     DESKTOP STYLING
@@ -282,7 +298,7 @@ img {
         margin-left: 60px;
     }
     #slide1 {
-        /*color: #a9a9a9;*/
+        color: #041738;
         padding-top: 200px;
         height: 100vh;
         background-attachment: fixed;
@@ -318,6 +334,55 @@ img {
     #pitch {
         padding-left: 620px;
         animation: fadeInRight 2s;
+    }
+    #slide2 {
+        margin: auto;
+        height: 750px;
+        padding-top: 80px;
+        text-align: center;
+        color: #20B2AA;
+    }
+    #profile {
+        display: inline-block;
+        width: 60vw;
+    }
+    #slide3 {
+        margin: auto;
+        height: 1000px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    #education {
+        display: inline-block;
+        width: 60vw;
+    }
+    #slide4 {
+        height: 1000px;
+        margin: auto;
+        text-align: center;
+        padding-top: 20px;
+        color: #20B2AA;
+    }
+    .slideHeader {
+        text-align: center;
+        font-size: 40px;
+        /*text-decoration: underline;*/
+    }
+    #slide4 ul {
+        list-style-type: none;
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        font-size: 18px;
+    }
+    #slide4 li {
+        color: black;
+    }
+    #skillsList {
+        display: inline-block;
+        width: 60vw;
+        text-align: left
+        /*margin: 0 auto;*/
     }
 }
 

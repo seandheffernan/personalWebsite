@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href='public/favicon/favicon.ico' type='image/x-icon'>
+
+   	<script src="https://unpkg.com/scrollreveal"></script>
 
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 
@@ -25,7 +28,7 @@
 
     <div class="wrapper">
     	<!-- Sidebar  -->
-	    <nav id="sidebar" class="fixed-top">
+	    <nav id="sidebar" class="fixed-top active">
 	        <div class="sidebar-header">
 	            <h3>Sean Heffernan</h3>
 	            <strong>SH</strong>
@@ -38,17 +41,20 @@
 	                    Home
 	                </a>
 	                <ul class="collapse list-unstyled" id="homeSubmenu">
-	                    <li>
-	                        <a href="#">Personal</a>
+	                	<li id="slide2Nav">
+	                        <a href="#">Profile</a>
 	                    </li>
-	                    <li>
+	                    <li id="slide3Nav">
 	                        <a href="#">Education</a>
 	                    </li>
-	                    <li>
+	                    <li id="slide4Nav">
 	                        <a href="#">Skills</a>
 	                    </li>
-	                    <li>
+	                    <li id="slide5Nav">
 	                        <a href="#">Projects</a>
+	                    </li>
+	                    <li id="slide6Nav">
+	                    	<a href="#">Connect</a>
 	                    </li>
 	                </ul>
 	            </li>
@@ -92,26 +98,82 @@
 	        </button>
 			<ul id="slides">
 				<li id="slide1">
-					<img class = "image" src="no-profile-img.jpg" alt="https://external-preview.redd.it/meHGx4tMG4Ru4nnj0cpsJHbJmRwXbuhzJffmcJE604Q.jpg?auto=webp&s=26c2ae0d5900d5747c27c3a15da7bb53022ffb8c">
+					<img class = "image" src="public/profile/no-profile-img.jpg" alt="https://external-preview.redd.it/meHGx4tMG4Ru4nnj0cpsJHbJmRwXbuhzJffmcJE604Q.jpg?auto=webp&s=26c2ae0d5900d5747c27c3a15da7bb53022ffb8c">
 					<div id="introWords">
 						<h2 id="word1">Student</h2>
 						<h2 id="word2">Developer</h2>
 						<h2 id="word3">Leader</h2>
 					</div>
 					<h1 id="topic">SEAN HEFFERNAN</h1>
-					<h2 id="pitch">Looking for internships and co-ops 2021</h2>
+					<h2 id="pitch">Project Manager and Full-Stack Developer</h2>
 				</li>
 				<li id="slide2">
-					<h2>Personal</h2>
+					<h2 class="slideHeader">Profile</h2>
+					<div id ="profile">
+						<h4>Looking for internships and co-ops 2021</h4>
+						<hr>
+						I am a student studying Computer Science and Information Technology/Web Science at Rensselaer Polytechnic Institute in Troy NY. As a programmer, I have experience as a full-stack developer focusing primarily on back-end work, working with both the MEAN and AMP stack. As a leader, I have worked as both a Project Manager as well as a mentor for inexperienced students entering the field. I am currently looking for internship and co-op opportunities in the Spring and Summer of 2021 to help develop my skills as a software developer and as a leader further than before.
+					</div>
 				</li>
 				<li id="slide3">
-					<h2>Education</h2>
+					<h2 class="slideHeader">Education</h2>
+					<div id="education">
+						<hr>
+					</div>
 				</li>
 				<li id="slide4">
-					<h2>Skills</h2>
+					<h2 class="slideHeader">Skills</h2>
+					<div id="skillsList">
+						<hr>
+						<h4>Computer Science</h4>
+						<ul>
+							<li>C</li>
+							<li>C++</li>
+						</ul>
+						<hr>
+						<h4>Web Development</h4>
+						<ul>
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>JavaScript</li>
+							<li>TypeScript</li>
+							<li>jQuery</li>
+							<li>Bootstrap</li>
+							<li>Apache</li>
+							<li>MySQL</li>
+							<li>PHP</li>
+							<li>SQL</li>
+							<li>PhpMyAdmin</li>
+							<li>MongoDB</li>
+							<li>Mongoose</li>
+							<li>Express.js</li>
+							<li>AngularJS</li>
+							<li>Node.js</li>
+						</ul>
+						<hr>
+						<h4>Documentation & Design</h4>
+						<ul>
+							<li>Microsoft Office</li>
+							<li>Google Drive</li>
+							<li>Tableau Desktop</li>
+							<li>Git</li>
+							<li>Sourcetree</li>
+							<li>Sublime Text</li>
+							<li>Visual Studio Code</li>
+						</ul>
+						<hr>
+						<h4>Languages</h4>
+						<ul>
+							<li>English</li>
+							<li>Japanese</li>
+						</ul>
+					</div>
 				</li>
 				<li id="slide5">
 					<h2>Projects</h2>
+				</li>
+				<li id="slide6">
+					<h2>Connect With Me</h2>
 				</li>
 			</ul>
 			<!-- Modal -->
