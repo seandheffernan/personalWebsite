@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 body {
-	background-image: url("https://wallpapercave.com/wp/fto5lYX.jpg");
+	/*background-image: url("https://wallpapercave.com/wp/fto5lYX.jpg");*/
 	font-family: 'Cormorant Garamond', serif;
     overflow-x: hidden;
+    background-color: white;
 }
 
 .dark-body {
@@ -274,6 +275,12 @@ img {
 #topic {
     font-family: 'Noto Serif', serif;
 }
+.modal-body a {
+    text-decoration: underline;
+}
+#profile a {
+    text-decoration: underline;
+}
 
 /* ---------------------------------------------------
     DESKTOP STYLING
@@ -324,14 +331,53 @@ img {
         animation: fadeInRight 2s;
     }
     #slide2 {
+        margin: auto;
         height: 1000px;
-        /*text-align: center;*/
+        padding-top: 40px;
+        text-align: center;
+        color: #20B2AA;
+    }
+    #profile {
+        display: inline-block;
+        width: 60vw;
+    }
+    #slide3 {
+        margin: auto;
+        height: 1000px;
+        text-align: center;
+        padding-top: 40px;
+    }
+    #education {
+        display: inline-block;
+        width: 60vw;
+    }
+    #slide4 {
+        height: 1000px;
+        margin: auto;
+        text-align: center;
+        padding-top: 40px;
+        color: #20B2AA;
     }
     .slideHeader {
         text-align: center;
         font-size: 40px;
-        margin-top: 40px;
-        text-decoration: underline;
+        /*text-decoration: underline;*/
+    }
+    #slide4 ul {
+        list-style-type: none;
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        font-size: 20px;
+    }
+    #slide4 li {
+        color: black;
+    }
+    #skillsList {
+        display: inline-block;
+        width: 60vw;
+        text-align: left
+        /*margin: 0 auto;*/
     }
 }
 
