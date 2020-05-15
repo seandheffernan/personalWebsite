@@ -46,7 +46,7 @@ var slideLeft = {
     origin: 'left',
     opacity: null,
     // delay: 200,
-    reset: true,
+    // reset: true,
     duration: 800,
     opacity: 0
 };
@@ -56,13 +56,13 @@ var slideRight = {
     origin: 'right',
     opacity: null,
     // delay: 200,
-    reset: true,
+    // reset: true,
     duration: 800,
     // opacity: 0
 }
 
 ScrollReveal().reveal('#slide2', slideLeft);
-ScrollReveal().reveal('#slide3', slideRight);
+ScrollReveal().reveal('#slide3Content', slideRight);
 ScrollReveal().reveal('#slide4', slideLeft);
 ScrollReveal().reveal('#slide5', slideRight);
 ScrollReveal().reveal('#slide6', slideLeft);

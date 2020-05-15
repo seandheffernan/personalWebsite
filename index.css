@@ -258,10 +258,18 @@ img {
     padding-left: 0px;
 }
 #slide1 {
+    height: auto;
     background-image: url("public/backgrounds/tokyo.jpg")
 }
+#slide2 {
+    height: auto;
+}
 #slide3 {
-    /*background-image: url("RPIQuad.jpg");*/
+    height: auto;
+    /*background-image: url("public/backgrounds/RPIQuad.jpg");*/
+}
+#slide4 {
+    height: auto;
 }
 #introWords {
     float: left;
@@ -292,10 +300,14 @@ img {
 ----------------------------------------------------- */
 
 @media (min-width: 769px) {
-    img {
+    .image {
         height: 300px;
         width: 300px;
         margin-left: 60px;
+    }
+    img {
+        height: auto;
+        width: auto;
     }
     #slide1 {
         color: #041738;
@@ -348,16 +360,50 @@ img {
     }
     #slide3 {
         margin: auto;
-        height: 1000px;
         text-align: center;
         padding-top: 20px;
+        background-color: #97c8f0;
+        display: flex;
+    }
+    #slide3Content {
+        padding-left: 40px;
+        padding-right: 40px;
     }
     #education {
         display: inline-block;
         width: 60vw;
     }
+    #educationIntro {
+        padding-top: 50px;
+        height: 300px;
+    }
+    #rpiSummary {
+        float: left;
+        padding-left: 25px;
+        padding-top: 25px;
+        font-size: 20px;
+        width: 620px;
+        text-align: left;
+    }
+    .educationSection {
+        height: 400px;
+        width: 100%;
+        position: relative;
+    }
+    .row {
+        padding-top: 30px;
+    }
+    .extracurriculars {
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: left;
+        /*font-size: 20px;*/
+    }
+    .row.extracurriculars a {
+        text-decoration: underline;
+        color: #008b8b;
+    }
     #slide4 {
-        height: 1000px;
         margin: auto;
         text-align: center;
         padding-top: 20px;
@@ -367,6 +413,17 @@ img {
         text-align: center;
         font-size: 40px;
         /*text-decoration: underline;*/
+    }
+    .contentHeader {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .className {
+        text-align: left;
+        font-size: 25px;
+    }
+    .classDescription {
+        text-align: left;
     }
     #slide4 ul {
         list-style-type: none;
@@ -382,7 +439,23 @@ img {
         display: inline-block;
         width: 60vw;
         text-align: left
+        /*margin-bottom: 50px;*/
         /*margin: 0 auto;*/
+    }
+    #slide5 {
+        background-color: #97c8f0;
+        padding-top: 20px;
+        text-align: center;
+    }
+    #slide5 div a {
+        text-decoration: underline;
+        color: #008b8b;
+    }
+    #projectPitch {
+        /*text-align: center;*/
+        display: inline-block;
+        width: 60vw;
+        padding-bottom: 30px;
     }
 }
 
