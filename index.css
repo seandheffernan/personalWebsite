@@ -300,10 +300,14 @@ img {
 ----------------------------------------------------- */
 
 @media (min-width: 769px) {
-    img {
+    .image {
         height: 300px;
         width: 300px;
         margin-left: 60px;
+    }
+    img {
+        height: auto;
+        width: auto;
     }
     #slide1 {
         color: #041738;
@@ -361,6 +365,10 @@ img {
         background-color: #97c8f0;
         display: flex;
     }
+    #slide3Content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
     #education {
         display: inline-block;
         width: 60vw;
@@ -372,7 +380,7 @@ img {
     #rpiSummary {
         float: left;
         padding-left: 25px;
-        padding-top: 50px;
+        padding-top: 25px;
         font-size: 20px;
         width: 620px;
         text-align: left;
@@ -385,7 +393,16 @@ img {
     .row {
         padding-top: 30px;
     }
-
+    .extracurriculars {
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: left;
+        /*font-size: 20px;*/
+    }
+    .row.extracurriculars a {
+        text-decoration: underline;
+        color: #008b8b;
+    }
     #slide4 {
         margin: auto;
         text-align: center;
@@ -427,6 +444,18 @@ img {
     }
     #slide5 {
         background-color: #97c8f0;
+        padding-top: 20px;
+        text-align: center;
+    }
+    #slide5 div a {
+        text-decoration: underline;
+        color: #008b8b;
+    }
+    #projectPitch {
+        /*text-align: center;*/
+        display: inline-block;
+        width: 60vw;
+        padding-bottom: 30px;
     }
 }
 
