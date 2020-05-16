@@ -457,6 +457,22 @@ img {
         width: 60vw;
         padding-bottom: 30px;
     }
+    #slide6 {
+        text-align: center;
+        height: 75vh;
+    }
+    #contactPitch {
+        display: inline-block;
+        width: 60vw;
+        padding-bottom: 30px;
+        font-size: 25px;
+    }
+    .contactButton {
+        transition: transform .2s;
+    }
+    .contactButton:hover {
+        transform: scale(1.5);
+    }
 }
 
 /* ---------------------------------------------------
