@@ -188,7 +188,7 @@ a.article:hover {
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
-    #sidebar {
+    #sidebar.active {
         min-width: 80px;
         max-width: 80px;
         text-align: center;
@@ -202,33 +202,33 @@ a.article:hover {
         -ms-transform: translateX(50%);
         transform: translateX(50%);
     }
-    #sidebar.active {
+    #sidebar {
         margin-left: 0 !important;
     }
-    #sidebar .sidebar-header h3,
-    #sidebar .CTAs {
+    #sidebar.active .sidebar-header h3,
+    #sidebar.active .CTAs {
         display: none;
     }
-    #sidebar .sidebar-header strong {
+    #sidebar.active .sidebar-header strong {
         display: block;
     }
-    #sidebar ul li a {
+    #sidebar.active ul li a {
         padding: 20px 10px;
     }
-    #sidebar ul li a span {
+    #sidebar.active ul li a span {
         font-size: 0.85em;
     }
-    #sidebar ul li a i {
+    #sidebar.active ul li a i {
         margin-right: 0;
         display: block;
     }
-    #sidebar ul ul a {
+    #sidebar.active ul ul a {
         padding: 10px !important;
     }
-    #sidebar ul li a i {
+    #sidebar.active ul li a i {
         font-size: 1.3em;
     }
-    #sidebar {
+    #sidebar.active {
         margin-left: 0;
     }
     #sidebarCollapse span {
@@ -253,20 +253,32 @@ img {
     width: 300px;
     float: left;
 }
+.row.extracurriculars a {
+    text-decoration: underline;
+    color: #008b8b;
+}
 #slides {
     list-style-type: none;
     padding-left: 0px;
 }
 #slide1 {
     height: auto;
-    background-image: url("public/backgrounds/tokyo.jpg")
+    background-image: url("public/backgrounds/tokyo.jpg");
+    color: #041738;
+    margin: auto;
 }
 #slide2 {
     height: auto;
+    text-align: center;
+    color: #20B2AA;
 }
 #slide3 {
     height: auto;
     /*background-image: url("public/backgrounds/RPIQuad.jpg");*/
+    margin: auto;
+    text-align: center;
+    background-color: #97c8f0;
+    display: flex;
 }
 #slide4 {
     height: auto;
@@ -310,7 +322,6 @@ img {
         width: auto;
     }
     #slide1 {
-        color: #041738;
         padding-top: 200px;
         height: 100vh;
         background-attachment: fixed;
@@ -348,22 +359,15 @@ img {
         animation: fadeInRight 2s;
     }
     #slide2 {
-        margin: auto;
-        height: 750px;
-        padding-top: 80px;
-        text-align: center;
-        color: #20B2AA;
+        padding-top: 10vh;
+        padding-bottom: 30vh;
     }
     #profile {
         display: inline-block;
         width: 60vw;
     }
-    #slide3 {
-        margin: auto;
-        text-align: center;
+    #slide3 { 
         padding-top: 20px;
-        background-color: #97c8f0;
-        display: flex;
     }
     #slide3Content {
         padding-left: 40px;
@@ -372,10 +376,6 @@ img {
     #education {
         display: inline-block;
         width: 60vw;
-    }
-    #educationIntro {
-        padding-top: 50px;
-        height: 300px;
     }
     #rpiSummary {
         float: left;
@@ -398,10 +398,6 @@ img {
         padding-right: 50px;
         text-align: left;
         /*font-size: 20px;*/
-    }
-    .row.extracurriculars a {
-        text-decoration: underline;
-        color: #008b8b;
     }
     #slide4 {
         margin: auto;
@@ -489,6 +485,9 @@ img {
         padding-left: 20px;
         margin-left: 70px;
         height: 600px;
+    }
+    #sidebarCollapse {
+        visibility: hidden;
     }
 }
 
