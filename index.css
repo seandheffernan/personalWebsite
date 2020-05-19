@@ -43,7 +43,7 @@ span {
     transition: all 0.3s;
     position: -webkit-sticky;
     position: sticky;
-    height: 150vh;
+    height: 100vh;
 }
 
 #sidebar.active {
@@ -306,6 +306,11 @@ img {
     font-size: 25px;
     color: #808080;
 }
+.projectLogo {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
 
 /* ---------------------------------------------------
     DESKTOP STYLING
@@ -378,6 +383,9 @@ img {
     #slide3Content {
         padding-left: 40px;
         padding-right: 40px;
+    }
+    #slide3Mobile {
+        display: none;
     }
     #education {
         display: inline-block;
@@ -459,11 +467,6 @@ img {
         width: 60vw;
         padding-bottom: 30px;
     }
-    .projectLogo {
-        display: flex; 
-        justify-content: center; 
-        align-items: center;
-    }
     #slide6 {
         text-align: center;
         height: 75vh;
@@ -487,15 +490,18 @@ img {
 ----------------------------------------------------- */
 
 @media (max-width:768px) {
+    #content {
+        overflow-wrap: break-word;
+    }
     img {
         height: 150px;
         width: 150px;
     }
     #slide1 {
         /*margin-top: 10px;*/
-        height: 500px;
-        padding-left: 2vh;
-        padding-right: 2vh;
+        height: 80vh;
+        padding-left: 2vw;
+        padding-right: 2vw;
         text-align: center;
     }
     #slide1Content {
@@ -509,6 +515,7 @@ img {
     }
     #content {
         margin-left: 80px;
+        width: calc(100vw - 80px);
     }
     .image {
         width: 200px;
@@ -529,6 +536,36 @@ img {
     }
     #pitch {
         display: none;
+    }
+    #slide2 {
+        display: table;
+        height: 80vh;
+        width: 100%;
+    }
+    .middle {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .inner {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #profile {
+        font-size: 16px;
+    }
+    #slide3Desktop {
+        display: none;
+    }
+    #slide3 {
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+    #slide3Content {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    button.btn.btn-link.className {
+        white-space: normal;
     }
 }
 
