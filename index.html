@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -92,7 +93,7 @@
 	        </button>
 			<ul id="slides">
 				<li id="slide1">
-					<div style="padding-left: 5vw;">
+					<div id="slide1Content">
 						<!-- <div class="col-sm"> -->
 							<img class = "image" src="public/profile/no-profile-img.jpg" alt="https://external-preview.redd.it/meHGx4tMG4Ru4nnj0cpsJHbJmRwXbuhzJffmcJE604Q.jpg?auto=webp&s=26c2ae0d5900d5747c27c3a15da7bb53022ffb8c">
 							<div id="introWords">
@@ -105,6 +106,11 @@
 							<h1 id="topic">SEAN HEFFERNAN</h1>
 							<h2 id="pitch">Project Manager and Full-Stack Developer</h2>
 						<!-- </div> -->
+					</div><br>
+					<div id="mobileContent">
+						<h1>Sean Heffernan</h1>
+						<hr>
+						Project Manager and Full-Stack Developer
 					</div>
 				</li>
 				<li id="slide2">
@@ -224,7 +230,7 @@
 						<h3 class="contentHeader">Notable Extracurriculars</h3>
 						<hr>
 						<div class="row extracurriculars">
-							<div class="col-sm" style="display: flex; justify-content: center; align-items: center;">
+							<div class="col-sm projectLogo">
 								<img src="public/backgrounds/wtgLogo.png" alt="RPI Logo">
 							</div>
 							<div class="col-sm">
@@ -245,7 +251,7 @@
 									<i class="fa fa-link" aria-hidden="true"></i> <a href="https://rcos.io/" target="_blank">rcos.io</a>
 								</p>							
 							</div>
-							<div class="col-sm" style="display: flex; justify-content: center; align-items: center;">
+							<div class="col-sm projectLogo">
 								<img style="border-radius:0%;" src="public/backgrounds/rcosLogo.png" alt="RPI Logo">
 							</div>
 						</div>
@@ -332,7 +338,7 @@
 							<button type="button" class="btn btn-info" onclick="window.open('https://github.com/wtg','_blank')">WTG Repository</button>
 						</div>
 						<div class="row">
-							<div class="col-sm" style="display: flex; justify-content: center; align-items: center;">
+							<div class="col-sm projectLogo">
 								<img src="public/backgrounds/collude_it.png" style="max-width: 60%; border-radius: 15px;" class="center-block">
 							</div>
 							<div class="col-sm">
@@ -353,12 +359,12 @@
 									<i class="fa fa-link" aria-hidden="true"></i> <a href="https://github.com/seandheffernan/Degreezy" target="_blank">Repository</a>
 								</p>	
 							</div>
-							<div class="col-sm" style="display: flex; justify-content: center; align-items: center;">
+							<div class="col-sm projectLogo">
 								<img src="public/backgrounds/degreezy.png" style="border-radius: 15px;" class="center-block">
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm" style="display: flex; justify-content: center; align-items: center;">
+							<div class="col-sm projectLogo">
 								<img src="public/backgrounds/shuttleTracker.png" style="border-radius: 15px; max-width: 60%" class="center-block">
 							</div>
 							<div class="col-sm">

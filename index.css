@@ -43,7 +43,7 @@ span {
     transition: all 0.3s;
     position: -webkit-sticky;
     position: sticky;
-    height: 100vh;
+    height: 150vh;
 }
 
 #sidebar.active {
@@ -329,6 +329,9 @@ img {
         background-repeat: no-repeat;
         background-size: cover;
     }
+    #slide1Content {
+        padding-left: 5vw;
+    }
     #word1 {
         /*transform: rotate(-20deg);*/
         top: 65px;
@@ -357,6 +360,9 @@ img {
     #pitch {
         padding-left: 620px;
         animation: fadeInRight 2s;
+    }
+    #mobileContent {
+        display: none;
     }
     #slide2 {
         padding-top: 10vh;
@@ -453,6 +459,11 @@ img {
         width: 60vw;
         padding-bottom: 30px;
     }
+    .projectLogo {
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
     #slide6 {
         text-align: center;
         height: 75vh;
@@ -482,12 +493,42 @@ img {
     }
     #slide1 {
         /*margin-top: 10px;*/
-        padding-left: 20px;
-        margin-left: 70px;
-        height: 600px;
+        height: 500px;
+        padding-left: 2vh;
+        padding-right: 2vh;
+        text-align: center;
+    }
+    #slide1Content {
+        padding-top: 10px;
+        height: auto;
+        display: flex;
+        justify-content: center;
     }
     #sidebarCollapse {
-        visibility: hidden;
+        display: none;
+    }
+    #content {
+        margin-left: 80px;
+    }
+    .image {
+        width: 200px;
+        height: 200px;
+    }
+    #mobileContent {
+        font-size: 30px;
+    }
+    #mobileContent h1 {
+        font-size: 40px;
+    }
+    #introWords {
+        position: relative;
+        display: none;
+    }
+    #topic {
+        display: none;
+    }
+    #pitch {
+        display: none;
     }
 }
 
