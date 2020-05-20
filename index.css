@@ -522,6 +522,18 @@ img {
         padding-right: 2vw;
         text-align: center;
     }
+    #slide2 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #slide3 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #slide4 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     #slide1Content {
         padding-top: 10px;
         height: auto;
