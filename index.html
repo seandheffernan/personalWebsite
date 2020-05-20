@@ -137,6 +137,7 @@
 								</div>
 								<div class="col-sm">
 									<div id="rpiSummary" class="slide3Intro">
+										<!-- Slide 3 Intro -->
 									</div>
 								</div>
 							</div>
@@ -206,7 +207,7 @@
 									<!-- Information Design Description -->
 								</div>
 							</div>
-							<h3 class="contentHeader">Notable Extracurriculars</h3>
+							<h3 class="contentHeader">Extracurriculars</h3>
 							<hr>
 							<div class="row extracurriculars">
 								<div class="col-sm projectLogo">
@@ -260,16 +261,19 @@
 						<div id="slide3Mobile">
 							<h2 class="slideHeader">Education</h2>
 							<hr>
-							<div class="row">
+							<div class="row" id="educationIntro">
 								<!-- <hr> -->
 								<div class="col-sm projectLogo">
 									<img src="public/backgrounds/rpiLogo.png" alt="RPI Logo">
 								</div>
 								<div class="col-sm">
 									<div class="slide3Intro">
+										<!-- Slide3 Intro -->
 									</div>
 								</div>
 							</div>
+						<h3 class="contentHeader">Notable Coursework</h3>
+						<hr>
 						<div class="accordion" id="classAccordion">
 						  	<div class="card border-primary">
 							    <div class="card-header" id="headingOne">
@@ -388,6 +392,56 @@
 							    </div>
 						  	</div>
 						</div>
+						<h3 class="contentHeader">Extracurriculars</h3>
+						<hr>
+						<div class="row extracurriculars">
+								<div class="col-sm projectLogo">
+									<img src="public/backgrounds/wtgLogo.png" alt="RPI Logo">
+								</div>
+								<div class="col-sm">
+									<p>
+										I am a member of RPI's Web Technologies Group, a Student Senate Committee creating and maintaining tech applications which aim to serve the students of RPI. Some of the projects we work on include the campus Shuttle Tracker, Senate Survey, and Petitions site. One notable accomplishment this past Spring was setting up a TV display in RPI's Student Union for the Shuttle Tracker to be displayed 24/7.<br>
+										<i class="fa fa-link" aria-hidden="true"></i> <a href="https://webtech.union.rpi.edu" target="_blank">webtech.union.rpi.edu</a>
+									</p>
+									<hr>
+								</div>
+						</div>
+						<div class="row extracurriculars">
+								<div class="col-sm projectLogo">
+									<img src="public/backgrounds/rcosLogo.png" alt="RCOS Logo" style="border-radius:0%; width: 90%; height: auto;">
+								</div>
+								<div class="col-sm">
+									<p>
+										I have worked as both a developer and mentor for RCOS, RPI's open source community. As a mentor, I provide guidance for both new and old RCOS students as well as grade their contributions to the team they are a part of. I am currently one of two Project Managers for RCOS's Shuttle Tracker team and will continue managing the team in the Fall.<br>
+										<i class="fa fa-link" aria-hidden="true"></i> <a href="https://rcos.io/" target="_blank">rcos.io</a>
+									</p>
+								</div>
+						</div>
+						<h3 class="contentHeader">Accomplishments</h3>
+						<hr>
+						<div class="row" style="text-align: center; display: inline;">
+							<ul style="padding-left: 0px;">
+								<dt>Rensselaer Leadership Award</dt>
+								<dd>Given in recognition of an outstanding record of academic and personal achievements, a strong commitment to excellence, and illustration of intellectual curiosity.<br>
+								Awarded throughout 2018 and 2019.</dd>
+								<dt>Dean's Honor List</dt>
+								<dd>Recognizes students who attain a grade point average of 3.50 or better and have no grade below C.<br>
+								Awarded throughout 2019.</dd>
+							</ul>
+						</div>
+						<h3 class="contentHeader">Other Activities</h3>
+						<hr>
+						<div class="row extracurriculars">
+							<div class="col-sm projectLogo">
+								<img src="public/backgrounds/waterpolo.JPG" alt="Water Polo Photo" style="border-radius:5%; width: 90%; height: auto;">
+							</div>
+							<div class="col-sm">
+								<p>
+									I have worked as both a developer and mentor for RCOS, RPI's open source community. As a mentor, I provide guidance for both new and old RCOS students as well as grade their contributions to the team they are a part of. I am currently one of two Project Managers for RCOS's Shuttle Tracker team and will continue managing the team in the Fall.<br>
+									<i class="fa fa-link" aria-hidden="true"></i> <a href="https://rcos.io/" target="_blank">rcos.io</a>
+								</p>
+							</div>
+						</div>
 				</li>
 				<li id="slide4">
 					<h2 class="slideHeader">Skills</h2>
@@ -438,55 +492,103 @@
 				</li>
 				<li id="slide5">
 					<div class="container">
-						<h2 class="slideHeader">Projects</h2>
-						<div id="projectPitch">
-							<hr>
-							Over the course of my time at RPI, I have worked on a multitude of projects honing my skills as both a developer and leader. These range from weekly assignments to semester long applications, to purely personal projects.
-							<br><br>
-							<button type="button" class="btn btn-info" onclick="window.open('https://github.com/seandheffernan','_blank')">Personal Repository</button>
-							&emsp;&emsp;
-							<button type="button" class="btn btn-info" onclick="window.open('https://github.com/wtg','_blank')">WTG Repository</button>
-						</div>
-						<div class="row">
-							<div class="col-sm projectLogo">
-								<img src="public/backgrounds/collude_it.png" style="max-width: 60%; border-radius: 15px;" class="center-block">
-							</div>
-							<div class="col-sm">
-								<h5 style="text-align: center"><strong>Collude.it</strong></h5>
+						<div id="slide5Desktop">
+							<h2 class="slideHeader">Projects</h2>
+							<div id="projectPitch">
 								<hr>
-								<p style="font-size: 20px; text-align: left"> 
-									A web chat service written using the AMP Stack, Collude.it was my term project for Web Systems Development in the Fall of 2019. Built with small team communication in mind, Collude.it allows for scheduling of in person meetings, group preference management, and quick communication via chat rooms. I worked as a back-end and middle-end developer on this project, helping to build the database via MySQL as well as integrate all the backend functionality into the frontend.<br>
-									<i class="fa fa-link" aria-hidden="true"></i> <a href="https://github.com/seandheffernan/Collude.it" target="_blank">Repository</a>
-								</p>	
+								Over the course of my time at RPI, I have worked on a multitude of projects honing my skills as both a developer and leader. These range from weekly assignments to semester long applications, to purely personal projects.
+								<br><br>
+								<button type="button" class="btn btn-info" onclick="window.open('https://github.com/seandheffernan','_blank')">Personal Repository</button>
+								&emsp;&emsp;
+								<button type="button" class="btn btn-info" onclick="window.open('https://github.com/wtg','_blank')">WTG Repository</button>
+							</div>
+							<div class="row">
+								<div class="col-sm projectLogo">
+									<img src="public/backgrounds/collude_it.png" style="max-width: 60%; border-radius: 15px;" class="center-block">
+								</div>
+								<div class="col-sm">
+									<h5 style="text-align: center"><strong>Collude.it</strong></h5>
+									<hr>
+									<p style="font-size: 20px; text-align: left"> 
+										A web chat service written using the AMP Stack, Collude.it was my term project for Web Systems Development in the Fall of 2019. Built with small team communication in mind, Collude.it allows for scheduling of in person meetings, group preference management, and quick communication via chat rooms. I worked as a back-end and middle-end developer on this project, helping to build the database via MySQL as well as integrate all the backend functionality into the frontend.<br>
+										<i class="fa fa-link" aria-hidden="true"></i> <a href="https://github.com/seandheffernan/Collude.it" target="_blank">Repository</a>
+									</p>	
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm">
+									<h5 style="text-align: center"><strong>Degreezy</strong></h5>
+									<hr>
+									<p style="font-size: 20px; text-align: left"> 
+										Degreezy was my term project for Web Science Systems Development in the Spring of 2020. Utilizing the MEAN Stack, Degreezy is a degree progress viewer as well as scheduler aimed at helping RPI students plan their four years in college. While it is certainly uncommon for students to come into a school with a set plan, Degreezy aims to make it easier for students to make changes later in their college career. Degreezy's features include a fully functional API, semester scheduler, and progress viewer which notifies you if you are on track to graduate. For this project, I worked as a back-end developer creating the database schema and API endpoints. <br>
+										<i class="fa fa-link" aria-hidden="true"></i> <a href="https://github.com/seandheffernan/Degreezy" target="_blank">Repository</a>
+									</p>	
+								</div>
+								<div class="col-sm projectLogo">
+									<img src="public/backgrounds/degreezy.png" style="border-radius: 15px;" class="center-block">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm projectLogo">
+									<img src="public/backgrounds/shuttleTracker.png" style="border-radius: 15px; max-width: 60%" class="center-block">
+								</div>
+								<div class="col-sm">
+									<h5 style="text-align: center"><strong>Shuttle Tracker</strong></h5>
+									<hr>
+									<p style="font-size: 20px; text-align: left"> 
+										Throughout my two semesters in RCOS so far, I have worked on WTG's Shuttle Tracker, a web application designed for tracking the shuttles which go around RPI's campus. During my first semester in RCOS in Fall 2019, I worked as a back-end developer, creating an endpoint for ETAs as well as a front-end display for ETAs which will eventually replace the current shuttle schedules. In Spring 2020, I became the Project Manager for Shuttle Tracker as well as a mentor for RCOS, and prioritized helping other members of the team, providing guidance and assistance where necessary. Some features we implemented this semester include a new dark mode feature and better admin tools to more easily update the application with up to date data. Shuttle Tracker is primarily written in Go and TypeScript, utilizing PostgreSql as it's database management system.  <br>
+										<i class="fa fa-link" aria-hidden="true"></i> <a href="https://github.com/wtg/shuttletracker" target="_blank">Repository</a>
+									</p>	
+								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-sm">
-								<h5 style="text-align: center"><strong>Degreezy</strong></h5>
+						<div id="slide5Mobile">
+							<h2 class="slideHeader">Projects</h2>
+							<div id="projectPitch">
 								<hr>
-								<p style="font-size: 20px; text-align: left"> 
-									Degreezy was my term project for Web Science Systems Development in the Spring of 2020. Utilizing the MEAN Stack, Degreezy is a degree progress viewer as well as scheduler aimed at helping RPI students plan their four years in college. While it is certainly uncommon for students to come into a school with a set plan, Degreezy aims to make it easier for students to make changes later in their college career. Degreezy's features include a fully functional API, semester scheduler, and progress viewer which notifies you if you are on track to graduate. For this project, I worked as a back-end developer creating the database schema and API endpoints. <br>
-									<i class="fa fa-link" aria-hidden="true"></i> <a href="https://github.com/seandheffernan/Degreezy" target="_blank">Repository</a>
-								</p>	
+								Over the course of my time at RPI, I have worked on a multitude of projects honing my skills as both a developer and leader. These range from weekly assignments to semester long applications, to purely personal projects.
+								<br><br>
+								<button type="button" class="btn btn-info" onclick="window.open('https://github.com/seandheffernan','_blank')" style="font-size: 14px;">Personal Repository</button>
+								<button type="button" class="btn btn-info" onclick="window.open('https://github.com/wtg','_blank')" style="font-size: 14px;">WTG Repository</button>
 							</div>
-							<div class="col-sm projectLogo">
-								<img src="public/backgrounds/degreezy.png" style="border-radius: 15px;" class="center-block">
+							<div class="row extracurriculars">
+								<div class="col-sm projectLogo">
+									<img src="public/backgrounds/collude_it.png" alt="RPI Logo" style="width: 100%; height: auto; border-radius: 10px;">
+								</div>
+								<div class="col-sm">
+									<p> 
+										A web chat service written using the AMP Stack, Collude.it was my term project for Web Systems Development in the Fall of 2019. Built with small team communication in mind, Collude.it allows for scheduling of in person meetings, group preference management, and quick communication via chat rooms. I worked as a back-end and middle-end developer on this project, helping to build the database via MySQL as well as integrate all the backend functionality into the frontend.<br>
+										<i class="fa fa-link" aria-hidden="true"></i> <a href="https://github.com/seandheffernan/Collude.it" target="_blank">Repository</a>
+									</p>	
+									<hr>
+								</div>
+							</div>
+							<div class="row extracurriculars">
+									<div class="col-sm projectLogo">
+										<img src="public/backgrounds/degreezy.png" alt="RPI Logo" style="width: 100%; height: auto; border-radius: 10px;">
+									</div>
+									<div class="col-sm">
+										<p> 
+											Degreezy was my term project for Web Science Systems Development in the Spring of 2020. Utilizing the MEAN Stack, Degreezy is a degree progress viewer as well as scheduler aimed at helping RPI students plan their four years in college. While it is certainly uncommon for students to come into a school with a set plan, Degreezy aims to make it easier for students to make changes later in their college career. Degreezy's features include a fully functional API, semester scheduler, and progress viewer which notifies you if you are on track to graduate. For this project, I worked as a back-end developer creating the database schema and API endpoints. <br>
+											<i class="fa fa-link" aria-hidden="true"></i> <a href="https://github.com/seandheffernan/Degreezy" target="_blank">Repository</a>
+										</p>	
+										<hr>
+									</div>
+							</div>
+							<div class="row extracurriculars">
+									<div class="col-sm projectLogo">
+										<img src="public/backgrounds/shuttletracker.png" alt="RPI Logo" style="width: 70%; height: auto; border-radius: 10px;">
+									</div>
+									<div class="col-sm">
+										<p> 
+											Throughout my two semesters in RCOS so far, I have worked on WTG's Shuttle Tracker, a web application designed for tracking the shuttles which go around RPI's campus. During my first semester in RCOS in Fall 2019, I worked as a back-end developer, creating an endpoint for ETAs as well as a front-end display for ETAs which will eventually replace the current shuttle schedules. In Spring 2020, I became the Project Manager for Shuttle Tracker as well as a mentor for RCOS, and prioritized helping other members of the team, providing guidance and assistance where necessary. Some features we implemented this semester include a new dark mode feature and better admin tools to more easily update the application with up to date data. Shuttle Tracker is primarily written in Go and TypeScript, utilizing PostgreSql as it's database management system.  <br>
+											<i class="fa fa-link" aria-hidden="true"></i> <a href="https://github.com/wtg/shuttletracker" target="_blank">Repository</a>
+										</p>	
+										<hr>
+									</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-sm projectLogo">
-								<img src="public/backgrounds/shuttleTracker.png" style="border-radius: 15px; max-width: 60%" class="center-block">
-							</div>
-							<div class="col-sm">
-								<h5 style="text-align: center"><strong>Shuttle Tracker</strong></h5>
-								<hr>
-								<p style="font-size: 20px; text-align: left"> 
-									Throughout my two semesters in RCOS so far, I have worked on WTG's Shuttle Tracker, a web application designed for tracking the shuttles which go around RPI's campus. During my first semester in RCOS in Fall 2019, I worked as a back-end developer, creating an endpoint for ETAs as well as a front-end display for ETAs which will eventually replace the current shuttle schedules. In Spring 2020, I became the Project Manager for Shuttle Tracker as well as a mentor for RCOS, and prioritized helping other members of the team, providing guidance and assistance where necessary. Some features we implemented this semester include a new dark mode feature and better admin tools to more easily update the application with up to date data. Shuttle Tracker is primarily written in Go and TypeScript, utilizing PostgreSql as it's database management system.  <br>
-									<i class="fa fa-link" aria-hidden="true"></i> <a href="https://github.com/wtg/shuttletracker" target="_blank">Repository</a>
-								</p>	
-							</div>
-						</div>
-					</div>
+					</div>	
 				</li>
 				<li id="slide6">
 					<div class="container">
