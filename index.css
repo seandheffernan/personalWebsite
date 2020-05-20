@@ -253,6 +253,10 @@ img {
     width: 300px;
     float: left;
 }
+.slideHeader {
+    text-align: center;
+    /*text-decoration: underline;*/
+}
 .row.extracurriculars a {
     text-decoration: underline;
     color: #008b8b;
@@ -310,6 +314,27 @@ img {
     display: flex; 
     justify-content: center; 
     align-items: center;
+}
+#slide4 h2,h4 {
+    color: #20B2AA;
+}
+#slide5 {
+    background-color: #97c8f0;
+    text-align: center;
+}
+#slide5 div a {
+    text-decoration: underline;
+    color: #008b8b;
+}
+#slide6 {
+        text-align: center;
+        height: 75vh;
+}
+#contactPitch {
+    display: inline-block;
+    width: 60vw;
+    padding-bottom: 30px;
+    font-size: 25px;
 }
 
 /* ---------------------------------------------------
@@ -369,6 +394,9 @@ img {
     #mobileContent {
         display: none;
     }
+    .slideHeader {
+        font-size: 40px;
+    }
     #slide2 {
         padding-top: 10vh;
         padding-bottom: 30vh;
@@ -419,11 +447,6 @@ img {
         padding-top: 20px;
         color: #20B2AA;
     }
-    .slideHeader {
-        text-align: center;
-        font-size: 40px;
-        /*text-decoration: underline;*/
-    }
     .contentHeader {
         text-align: center;
         margin-top: 30px;
@@ -453,13 +476,14 @@ img {
         /*margin: 0 auto;*/
     }
     #slide5 {
-        background-color: #97c8f0;
         padding-top: 20px;
-        text-align: center;
     }
     #slide5 div a {
         text-decoration: underline;
         color: #008b8b;
+    }
+    #slide5Mobile {
+        display: none;
     }
     #projectPitch {
         /*text-align: center;*/
@@ -470,12 +494,6 @@ img {
     #slide6 {
         text-align: center;
         height: 75vh;
-    }
-    #contactPitch {
-        display: inline-block;
-        width: 60vw;
-        padding-bottom: 30px;
-        font-size: 25px;
     }
     .contactButton {
         transition: transform .2s;
@@ -557,15 +575,34 @@ img {
         display: none;
     }
     #slide3 {
-        font-size: 16px;
+        padding-top: 20px;
         padding-bottom: 30px;
+        font-size: 16px;
     }
     #slide3Content {
         padding-left: 2px;
         padding-right: 2px;
     }
+    #educationIntro {
+        padding-bottom: 20px;
+    }
     button.btn.btn-link.className {
         white-space: normal;
+    }
+    .accordion {
+        padding-bottom: 30px;
+    }
+    #slide4 {
+        padding-top: 20px;
+    }
+    #slide5 {
+        padding-top: 20px;
+    }
+    #slide5Desktop {
+        display: none;
+    }
+    #projectPitch {
+        padding-bottom: 20px;
     }
 }
 
